@@ -1,8 +1,8 @@
 const bunnyImages = [
-    'images/bunny1.png',
-    'images/bunny2.png',
-    'images/bunny3.png',
-    'images/bunny4.png'
+    'bunny1.png',
+    'bunny2.png',
+    'bunny3.png',
+    'bunny4.png'
   ];
   
   let score = 0;
