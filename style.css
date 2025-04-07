@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(145deg, #003366, #8B008B, #006400); /* Dark blue, dark pink, and dark green gradient */
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #00ffcc, #ff00ff, #ffff00, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #startButton {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #00ffcc, #ff00ff, #ffff00);
+    border: none;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  
+  #startButton:hover {
+    transform: scale(1.1);
+  }
+  
+  #score, #timer {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .hole {
+    position: relative;
+    width: 155px;
+    height: 155px;
+    background-color: #222;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .bunny {
+    display: none;
+    position: absolute;
+    width: 100px;  /* Increased the bunny size */
+    height: 100px; /* Increased the bunny size */
+    background-color: #222;
+    background-size: cover;
+    border-radius: 70%;
+    animation: hop 1s ease-in-out infinite;
+  }
+  
+  @keyframes hop {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+  }
+  
